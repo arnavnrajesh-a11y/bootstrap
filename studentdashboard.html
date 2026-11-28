@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    h2{
+        font-family: sans-serif;
+        font-weight: 40px;
+        padding: 20px;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    
+  </style>
+</head>
+<body>
+    <header class="bg-secondary">
+        <div class="row">
+            <div  class="col-11 ">
+             <h2 class="d-flex justify-content-between align-items-center">
+      <span>STUDENT DASHBOARD</span>
+            <button type="button" class="btn btn-primary btn-md"><span>START NEW COURSE</span></button></h2>
+        </div>
+    </header>  
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://www.google.com/">HOME</a></li>
+        <li class="breadcrumb-item"><a href="https://www.google.com/">DASHBOARD</a></li>
+        <li class="breadcrumb-item active" aria-current="page">MY COURSES</li>
+    </ul>
+    <div class="container">
+    <h3 class="text-center">My progress <span class="badge badge-warning">3 courses</span></h3><br>
+    <div class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%;">70%</div>
+    </div><br>
+    <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            
+    </ul>
+    </div>
+</body>
+</html>

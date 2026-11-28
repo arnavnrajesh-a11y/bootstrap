@@ -12,6 +12,7 @@
     h2{
         padding: 20px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
     }
     a{
         padding-top: 25px;
@@ -30,13 +31,18 @@
 <body>
      <header class="bg-success">
     <div class="row">
-    <h2 class="col-8">DREAM TECH</h2>
-    <div class="col-sm-1"></div>
+    <h2 class="col-8 container">DREAM TECH</h2>
+    
     <a href="https://www.youtube.com/" class="col-sm-1">HOME</a>
     <a href="https://www.youtube.com/" class="col-sm-1">CONTACT</a>
     </div>
     </header>  
     <div class="container"> 
+        <ul class = "breadcrumb">
+   <li class = "breadcrumb-item"><a href = "https://www.mashupstack.com">Home</a></li>
+   <li class = "breadcrumb-item"><a href="https://www.mashupstack.com/list-courses">Mashupstack</a></li>
+   <li class = "breadcrumb-item active" aria-current = "page">Bootstrap 4</li>
+</ul>
         <h2 class="col-4">Our team</h2> 
         <p class="col-4">“Great things in business are never done by one person. They're done by a team of people.”
         — Steve Jobs</p><br>
@@ -47,13 +53,17 @@
             <li>exellence</li>
         </ul>
         <img src="https://img.magnific.com/free-vector/corporate-meeting-employees-cartoon-characters-discussing-business-strategy-planning-further-actions-brainstorming-formal-communication-seminar-concept-illustration_335657-2035.jpg?semt=ais_hybrid&w=740&q=80" alt="image" class=" mx-auto d-block rounded-circle" height="500px" width="400px">
-        <table class="table table-bordered table-responsive">
+        <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
             
                 <th>name</th>
                 <th>role</th>
                 <th>status</th>
-            
-            
+            </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>john</td>
                     <td>developer</td>
@@ -75,8 +85,11 @@
                         <span class="badge bg-danger">resigned</span>
                     </td>
                 </tr>
+            </tbody>
         </table>
+        </div>
         <div class="alert alert-warning">One or more team members are not currently active.</div>
     </div>
+
 </body>
 </html>
